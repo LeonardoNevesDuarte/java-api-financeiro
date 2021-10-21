@@ -13,10 +13,6 @@ import br.com.apifinanceiro.beans.beanStdRequest;
 @RestController
 public class validaCPFController {
 
-   
-    //@GetMapping("/validaCPF")
-    //public clsStdResponse validaCPF(@RequestBody String req) {
-
     @PostMapping(value="/validaCPF", consumes = MediaType.APPLICATION_JSON_VALUE)
     public beanResponseValidation validaCPF(@RequestBody beanStdRequest req) {
         

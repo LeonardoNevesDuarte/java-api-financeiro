@@ -2,17 +2,13 @@ package br.com.apifinanceiro.beans;
 
 import java.util.ArrayList;
 
-public class beanStdRequest {
+public class beanRequestInt {
     
     private String authKey;
-    private ArrayList<String> param;
-
-    //Constructor
-    public beanStdRequest() {
-    }
+    private ArrayList<Integer> param;
 
     // Constructor
-    public beanStdRequest(String varAuthKey, ArrayList<String> varParam) {
+    public beanRequestInt(String varAuthKey, ArrayList<Integer> varParam) {
         this.authKey = varAuthKey;
         this.param = varParam;
     }
@@ -22,14 +18,13 @@ public class beanStdRequest {
     public String getAuthKey() {
         return authKey;
     }
-    public void setParam(ArrayList<String> varParam) {
+    public void setParam(ArrayList<Integer> varParam) {
         this.param = varParam;
     }
 
-    public ArrayList<String> getParam() {
+    public ArrayList<Integer> getParam() {
         return param;
     }
-
     /*
     @Override
     public String toString() {
